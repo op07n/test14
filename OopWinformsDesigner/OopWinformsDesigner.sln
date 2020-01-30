@@ -5,9 +5,12 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Documentations", "0-Documentations", "{1CB33994-FCB6-453C-B9DF-929AFF1B38DE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apis", "1-Apis", "{2088A967-EB2F-4591-AA1A-B5E09F6A9D9C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Assets", "1-Assets", "{2088A967-EB2F-4591-AA1A-B5E09F6A9D9C}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\Designer.ico = Assets\Designer.ico
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopWinformsDesigner", "OopWinformsDesigner\OopWinformsDesigner.csproj", "{7422B0B4-014F-42F9-8855-C31573197B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopWinformsDesigner", "OopWinformsDesigner\OopWinformsDesigner.csproj", "{7422B0B4-014F-42F9-8855-C31573197B94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{47F22305-3761-4EA3-ACEC-87C01AFFCB16}"
 EndProject
@@ -453,6 +456,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevExpress Tooolkit", "DevE
 		..\Libs\DevExpress Toolkit\Web.DemoData.v19.2.dll = ..\Libs\DevExpress Toolkit\Web.DemoData.v19.2.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Apis", "2-Apis", "{536BDBC3-AC4A-4A59-9E0E-BF1D01ABC474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopDesigner", "OopDesigner\OopDesigner.csproj", "{99DB06A5-D01E-4318-9801-7A429FD648CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -463,6 +470,10 @@ Global
 		{7422B0B4-014F-42F9-8855-C31573197B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7422B0B4-014F-42F9-8855-C31573197B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7422B0B4-014F-42F9-8855-C31573197B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DB06A5-D01E-4318-9801-7A429FD648CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DB06A5-D01E-4318-9801-7A429FD648CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DB06A5-D01E-4318-9801-7A429FD648CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DB06A5-D01E-4318-9801-7A429FD648CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -470,6 +481,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{47F22305-3761-4EA3-ACEC-87C01AFFCB16} = {1CB33994-FCB6-453C-B9DF-929AFF1B38DE}
 		{062F6374-8EAE-4C41-B7EC-7A4E0FFF8068} = {47F22305-3761-4EA3-ACEC-87C01AFFCB16}
+		{99DB06A5-D01E-4318-9801-7A429FD648CA} = {536BDBC3-AC4A-4A59-9E0E-BF1D01ABC474}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2D15AA1-5A05-4367-9B20-BE518A2D3AB1}

@@ -1,7 +1,6 @@
+using DevExpress.UserSkins;
+
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OopWinformsDesigner
@@ -14,6 +13,7 @@ namespace OopWinformsDesigner
         [STAThread]
         static void Main()
         {
+            BonusSkins.Register();
 #if NETCOREAPP
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
 #endif
