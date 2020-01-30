@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Documentations", "0-Documentations", "{1CB33994-FCB6-453C-B9DF-929AFF1B38DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apis", "1-Apis", "{2088A967-EB2F-4591-AA1A-B5E09F6A9D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopWinformsDesigner", "OopWinformsDesigner\OopWinformsDesigner.csproj", "{7422B0B4-014F-42F9-8855-C31573197B94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7422B0B4-014F-42F9-8855-C31573197B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7422B0B4-014F-42F9-8855-C31573197B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7422B0B4-014F-42F9-8855-C31573197B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7422B0B4-014F-42F9-8855-C31573197B94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2D15AA1-5A05-4367-9B20-BE518A2D3AB1}
+	EndGlobalSection
+EndGlobal
