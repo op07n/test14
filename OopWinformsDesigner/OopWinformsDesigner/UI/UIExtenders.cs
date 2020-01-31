@@ -22,6 +22,9 @@ namespace OopWinformsDesigner.UI {
             layoutControl.BeginUpdate();
 
             layoutControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            // This layout is drawn there, with many sides.
+            layoutControl.AddGroup();
+            layoutControl.AddGroup();
             layoutControl.EndUpdate();
             return layoutControl;
         }

@@ -7,12 +7,7 @@ using OopWinformsDesigner.UI;
 using System;
 
 namespace OopWinformsDesigner {
-    public partial class MainForm : DevExpress.XtraEditors.XtraForm {
-        /// <summary>
-        /// Gets or sets the main ribbon control.
-        /// </summary>
-        public RibbonControl Ribbon { get; set; }
-
+    public partial class MainForm : RibbonForm {
         /// <summary>
         /// Gets or sets the layout that will be used to match designer processes.
         /// </summary>
@@ -34,9 +29,9 @@ namespace OopWinformsDesigner {
         protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
 
+            installLayout();
             installRibbonMenu();
             installBarManager();
-            installLayout();
         }
 
         private void installLayout() {
