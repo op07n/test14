@@ -469,6 +469,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopDesigner", "OopDesigner\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopTranslation", "OopTranslation\OopTranslation.csproj", "{4FB7C3E7-A75D-4142-B2A0-ED9423CFAC7D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analysis", "Analysis", "{13F776BB-0DED-4852-9236-E69DB492DEE5}"
+	ProjectSection(SolutionItems) = preProject
+		..\Analysis\Design UI.bmpr = ..\Analysis\Design UI.bmpr
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -496,6 +501,7 @@ Global
 		{062F6374-8EAE-4C41-B7EC-7A4E0FFF8068} = {47F22305-3761-4EA3-ACEC-87C01AFFCB16}
 		{99DB06A5-D01E-4318-9801-7A429FD648CA} = {536BDBC3-AC4A-4A59-9E0E-BF1D01ABC474}
 		{4FB7C3E7-A75D-4142-B2A0-ED9423CFAC7D} = {536BDBC3-AC4A-4A59-9E0E-BF1D01ABC474}
+		{13F776BB-0DED-4852-9236-E69DB492DEE5} = {1CB33994-FCB6-453C-B9DF-929AFF1B38DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		RESX_AutoCreateNewLanguageFiles = True
