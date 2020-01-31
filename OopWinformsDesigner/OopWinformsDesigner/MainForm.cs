@@ -1,29 +1,27 @@
 ﻿using System;
 
-namespace OopWinformsDesigner
-{
-    public partial class MainForm : DevExpress.XtraEditors.XtraForm
-    {
-        public MainForm()
-        {
+namespace OopWinformsDesigner {
+    public partial class MainForm : DevExpress.XtraEditors.XtraForm {
+        public MainForm() {
             InitializeComponent();
         }
 
-        protected override void OnLoad(EventArgs e)
-        {
+        protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
 
-            InstallBarManager();
+            installRibbonMenu();
+            installBarManager();
         }
 
-        private void InstallBarManager()
-        {
+        private void installRibbonMenu() {
+
+        }
+        private void installBarManager() {
             var barManager = new DevExpress.XtraBars.BarManager(this.components);
 
             barManager.Form = this;
             barManager.BeginUpdate();
-            var statusBar = new DevExpress.XtraBars.Bar()
-            {
+            var statusBar = new DevExpress.XtraBars.Bar() {
                 BarName = "StatusBar",
                 Manager = barManager,
                 DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom,
@@ -32,9 +30,8 @@ namespace OopWinformsDesigner
                 DockRow = 0
             };
             barManager.Bars.Add(statusBar);
-            statusBar.AddItem(new DevExpress.XtraBars.BarStaticItem
-            {
-                Caption = "test"
+            statusBar.AddItem(new DevExpress.XtraBars.BarStaticItem {
+                Caption = OopTranslation.StatusBar.Awaiting
             });
 
             barManager.Bars.Add(statusBar);
