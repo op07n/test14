@@ -121,4 +121,7 @@
     <value>Prêt. Pour commencer, chargez une solution ou un projet.</value>
     <comment>Awaiting</comment>
   </data>
+  <data name="SkinSelect" xml:space="preserve">
+    <value>Style graphique :</value>
+  </data>
 </root>

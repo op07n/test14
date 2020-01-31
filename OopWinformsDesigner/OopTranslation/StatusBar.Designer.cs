@@ -68,5 +68,14 @@ namespace OopTranslation {
                 return ResourceManager.GetString("Awaiting", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à SkinSelect.
+        /// </summary>
+        public static string SkinSelect {
+            get {
+                return ResourceManager.GetString("SkinSelect", resourceCulture);
+            }
+        }
     }
 }

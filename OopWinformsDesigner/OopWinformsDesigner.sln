@@ -4,10 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Documentations", "0-Documentations", "{1CB33994-FCB6-453C-B9DF-929AFF1B38DE}"
+	ProjectSection(SolutionItems) = preProject
+		..\ITLightON.snk = ..\ITLightON.snk
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Assets", "1-Assets", "{2088A967-EB2F-4591-AA1A-B5E09F6A9D9C}"
 	ProjectSection(SolutionItems) = preProject
 		Assets\Designer.ico = Assets\Designer.ico
+		Assets\Message-Information.png = Assets\Message-Information.png
+		Assets\Palette.png = Assets\Palette.png
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopWinformsDesigner", "OopWinformsDesigner\OopWinformsDesigner.csproj", "{7422B0B4-014F-42F9-8855-C31573197B94}"

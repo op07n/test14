@@ -121,4 +121,8 @@
     <value>Awaiting</value>
     <comment>Awaiting</comment>
   </data>
+  <data name="SkinSelect" xml:space="preserve">
+    <value>SkinSelect</value>
+    <comment>SkinSelect</comment>
+  </data>
 </root>

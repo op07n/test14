@@ -14,7 +14,11 @@ namespace OopWinformsDesigner {
         }
 
         private void installRibbonMenu() {
+            var ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            var ribbonManager = new DevExpress.XtraBars.Ribbon.RibbonBarManager(ribbonControl);
 
+            ribbonControl.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.True;
+            Controls.Add(ribbonControl);
         }
         private void installBarManager() {
             var barManager = new DevExpress.XtraBars.BarManager(this.components);
@@ -31,7 +35,20 @@ namespace OopWinformsDesigner {
             };
             barManager.Bars.Add(statusBar);
             statusBar.AddItem(new DevExpress.XtraBars.BarStaticItem {
-                Caption = OopTranslation.StatusBar.Awaiting
+                AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True,
+                ImageToTextAlignment = DevExpress.XtraBars.BarItemImageToTextAlignment.BeforeText,
+                Caption = OopTranslation.StatusBar.Awaiting,
+                Glyph = Properties.Resources.Message_Information,
+                PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
+            });
+            statusBar.AddItem(new DevExpress.XtraBars.BarEditItem {
+                AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True,
+                Caption = OopTranslation.StatusBar.SkinSelect,
+                Edit = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox() {
+                    TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+                },
+                Glyph = Properties.Resources.Palette,
+                PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
             });
 
             barManager.Bars.Add(statusBar);

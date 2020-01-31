@@ -121,4 +121,7 @@
     <value>Ready. To start process, fill a solution or a projet file.</value>
     <comment>Awaiting</comment>
   </data>
+  <data name="SkinSelect" xml:space="preserve">
+    <value>Skin:</value>
+  </data>
 </root>
