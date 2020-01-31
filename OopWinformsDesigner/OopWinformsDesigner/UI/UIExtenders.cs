@@ -1,7 +1,10 @@
 ﻿using DevExpress.Skins;
 using DevExpress.Utils.Extensions;
 using DevExpress.XtraBars;
+using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraLayout;
+
+using OopWinformsDesigner.Session;
 
 namespace OopWinformsDesigner.UI {
     /// <summary>
@@ -20,6 +23,29 @@ namespace OopWinformsDesigner.UI {
             layoutControl.Dock = System.Windows.Forms.DockStyle.Fill;
             layoutControl.EndUpdate();
             return layoutControl;
+        }
+
+        /// <summary>
+        /// This function extends the installation of the ribbon control with adding all required elements.
+        /// </summary>
+        /// <param name="ribbonControl">Reference to the ribbon control initialized</param>
+        /// <returns>Self instance of the ribbon control but fully configured</returns>
+        public static RibbonControl Install(this RibbonControl ribbonControl) {
+            ribbonControl.ButtonGroupsLayout = ButtonGroupsLayout.ThreeRows;
+            var pageSolution = new RibbonPage(OopTranslation.Ribbon.RibbonPageSolutionsProjects);
+            var groupProjectsAndSolutionsLoadSolution = new RibbonPageGroup(OopTranslation.Ribbon.RibbonPageSolutionsProjectsGroupLoadSolution);
+            groupProjectsAndSolutionsLoadSolution.ItemsLayout = RibbonPageGroupItemsLayout.OneRow;
+            groupProjectsAndSolutionsLoadSolution.ItemLinks.Add(new BarButtonItem());
+
+            var groupProjectsAndSolutionsLoadProject = new RibbonPageGroup(OopTranslation.Ribbon.RibbonPageSolutionsProjectsGroupLoadProject);
+            groupProjectsAndSolutionsLoadProject.ItemsLayout = RibbonPageGroupItemsLayout.OneRow;
+            pageSolution.Groups.Add(groupProjectsAndSolutionsLoadSolution);
+            pageSolution.Groups.Add(groupProjectsAndSolutionsLoadProject);
+            ribbonControl.Pages.Add(pageSolution);
+            if (SessionInfo.Instance.IsSolutionOrProjectLoaded) {
+                // Add alternate groups (pages).
+            }
+            return ribbonControl;
         }
 
         /// <summary>

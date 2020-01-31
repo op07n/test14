@@ -14,6 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Ribbon.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ribbon.resx</DependentUpon>
+    </Compile>
     <Compile Update="StatusBar.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -22,6 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Ribbon.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ribbon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="StatusBar.fr.resx">
       <Generator></Generator>
     </EmbeddedResource>

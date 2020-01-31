@@ -45,7 +45,7 @@ namespace OopWinformsDesigner {
             Controls.Add(MainLayout);
         }
         private void installRibbonMenu() {
-            Ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            Ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl().Install();
             var ribbonManager = new DevExpress.XtraBars.Ribbon.RibbonBarManager(Ribbon);
 
             Ribbon.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.True;
