@@ -2,6 +2,7 @@
 using DevExpress.Utils.Extensions;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using DevExpress.XtraLayout;
 
 using OopWinformsDesigner.Session;
@@ -35,7 +36,25 @@ namespace OopWinformsDesigner.UI {
             var pageSolution = new RibbonPage(OopTranslation.Ribbon.RibbonPageSolutionsProjects);
             var groupProjectsAndSolutionsLoadSolution = new RibbonPageGroup(OopTranslation.Ribbon.RibbonPageSolutionsProjectsGroupLoadSolution);
             groupProjectsAndSolutionsLoadSolution.ItemsLayout = RibbonPageGroupItemsLayout.OneRow;
-            groupProjectsAndSolutionsLoadSolution.ItemLinks.Add(new BarButtonItem());
+            var buttonOpenSolution = new BarButtonItem {
+                Caption = OopTranslation.Ribbon.RibbonButtonLoadSolution,
+                AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True,
+                Glyph = Properties.Resources.OpenSolution,
+                LargeGlyph = Properties.Resources.OpenSolution,
+                LargeWidth = 64
+            };
+            buttonOpenSolution.ItemClick += (sender, e) => {
+                using (var ofn = new XtraOpenFileDialog() {
+                    CheckPathExists = true,
+                    CheckFileExists = true,
+                    DefaultExt = "*.sln"
+                }) {
+                    if (ofn.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
+                        XtraMessageBox.Show("Path:" + ofn.FileName);
+                    }
+                }
+            };
+            groupProjectsAndSolutionsLoadSolution.ItemLinks.Add(buttonOpenSolution);
 
             var groupProjectsAndSolutionsLoadProject = new RibbonPageGroup(OopTranslation.Ribbon.RibbonPageSolutionsProjectsGroupLoadProject);
             groupProjectsAndSolutionsLoadProject.ItemsLayout = RibbonPageGroupItemsLayout.OneRow;

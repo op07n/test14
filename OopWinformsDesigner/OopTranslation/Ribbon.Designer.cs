@@ -61,6 +61,15 @@ namespace OopTranslation {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à RibbonButtonLoadSolution.
+        /// </summary>
+        public static string RibbonButtonLoadSolution {
+            get {
+                return ResourceManager.GetString("RibbonButtonLoadSolution", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à RibbonPageSolutionsProjects.
         /// </summary>
         public static string RibbonPageSolutionsProjects {

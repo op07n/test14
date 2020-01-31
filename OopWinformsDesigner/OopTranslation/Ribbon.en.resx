@@ -126,4 +126,7 @@
   <data name="RibbonPageSolutionsProjectsGroupLoadProject" xml:space="preserve">
     <value>Load a project</value>
   </data>
+  <data name="RibbonButtonLoadSolution" xml:space="preserve">
+    <value>Loads a solution</value>
+  </data>
 </root>

@@ -129,4 +129,8 @@
     <value>RibbonPageSolutionsProjectsGroupLoadProject</value>
     <comment>RibbonPageSolutionsProjectsGroupLoadProject</comment>
   </data>
+  <data name="RibbonButtonLoadSolution" xml:space="preserve">
+    <value>RibbonButtonLoadSolution</value>
+    <comment>RibbonButtonLoadSolution</comment>
+  </data>
 </root>
