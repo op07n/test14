@@ -11,6 +11,10 @@ namespace OopDesigner.Registry
     /// <remarks>The assemblies beginning by System are ignored.</remarks>
     public static class UiKitRegistrator
     {
+        /// <summary>
+        /// Auto registration about foreign components if required
+        /// </summary>
+        /// <param name="unityContainer">Reference to the container where to register</param>
         public static void Configure(IUnityContainer unityContainer)
         {
 
