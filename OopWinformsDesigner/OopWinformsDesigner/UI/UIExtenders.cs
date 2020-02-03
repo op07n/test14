@@ -4,7 +4,7 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
 using DevExpress.XtraLayout;
-
+using DevExpress.XtraVerticalGrid;
 using OopWinformsDesigner.Session;
 using OopWinformsDesigner.UI.UserControls;
 using System.Drawing;
@@ -27,9 +27,7 @@ namespace OopWinformsDesigner.UI
             panelControl.BeginInit();
 
             panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            panelControl.Controls.Add(
-                new MainLayout().Install()
-                );
+            panelControl.Controls.Add(new MainLayout().Install());
             panelControl.EndInit();
             return panelControl;
         }
@@ -41,6 +39,12 @@ namespace OopWinformsDesigner.UI
         /// <returns>Self instance of the layout</returns>
         public static MainLayout Install(this MainLayout mainLayout)
         {
+            var splitContainer = new SplitContainerControl();
+
+            splitContainer.Panel2.Controls.Add(new PropertyGridControl());
+            splitContainer.Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            mainLayout.AddControl(splitContainer);
+            mainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             return mainLayout;
         }
 
