@@ -472,6 +472,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analysis", "Analysis", "{13F776BB-0DED-4852-9236-E69DB492DEE5}"
 	ProjectSection(SolutionItems) = preProject
 		..\Analysis\Design UI.bmpr = ..\Analysis\Design UI.bmpr
+		..\Analysis\Ribbons.bmpr = ..\Analysis\Ribbons.bmpr
+		..\Analysis\Windows Forms Designer.docx = ..\Analysis\Windows Forms Designer.docx
 	EndProjectSection
 EndProject
 Global
@@ -504,8 +506,8 @@ Global
 		{13F776BB-0DED-4852-9236-E69DB492DEE5} = {1CB33994-FCB6-453C-B9DF-929AFF1B38DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_AutoCreateNewLanguageFiles = True
-		RESX_ConfirmAddLanguageFile = True
 		SolutionGuid = {A2D15AA1-5A05-4367-9B20-BE518A2D3AB1}
+		RESX_ConfirmAddLanguageFile = True
+		RESX_AutoCreateNewLanguageFiles = True
 	EndGlobalSection
 EndGlobal

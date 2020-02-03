@@ -10,4 +10,8 @@
     <None Include="..\..\ITLightON.snk" Link="ITLightON.snk" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Unity.Container" Version="5.11.5" />
+  </ItemGroup>
+
 </Project>
