@@ -1,17 +1,20 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using DevExpress.XtraLayout;
 
 using OopWinformsDesigner.UI;
 
 using System;
 
-namespace OopWinformsDesigner {
-    public partial class MainForm : RibbonForm {
+namespace OopWinformsDesigner
+{
+    public partial class MainForm : RibbonForm
+    {
         /// <summary>
         /// Gets or sets the layout that will be used to match designer processes.
         /// </summary>
-        public LayoutControl MainLayout { get; set; }
+        public PanelControl MainLayout { get; set; }
 
         /// <summary>
         /// Gets or sets the bar manager (used to create both status bar / menus).
@@ -21,12 +24,15 @@ namespace OopWinformsDesigner {
         /// <summary>
         /// Gets or sets the status bar of the application.
         /// </summary>
-        public Bar StatusBar { get; set; }
-        public MainForm() {
+        public new Bar StatusBar { get; set; }
+
+        public MainForm()
+        {
             InitializeComponent();
         }
 
-        protected override void OnLoad(EventArgs e) {
+        protected override void OnLoad(EventArgs e)
+        {
             base.OnLoad(e);
 
             installLayout();
@@ -34,24 +40,28 @@ namespace OopWinformsDesigner {
             installBarManager();
         }
 
-        private void installLayout() {
-            MainLayout = new DevExpress.XtraLayout.LayoutControl().Install();
+        private void installLayout()
+        {
+            MainLayout = new PanelControl().Install();
 
             Controls.Add(MainLayout);
         }
-        private void installRibbonMenu() {
+        private void installRibbonMenu()
+        {
             Ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl().Install();
             var ribbonManager = new DevExpress.XtraBars.Ribbon.RibbonBarManager(Ribbon);
 
             Ribbon.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.True;
             Controls.Add(Ribbon);
         }
-        private void installBarManager() {
+        private void installBarManager()
+        {
             BarManager = new DevExpress.XtraBars.BarManager(this.components);
 
             BarManager.Form = this;
             BarManager.BeginUpdate();
-            StatusBar = new DevExpress.XtraBars.Bar() {
+            StatusBar = new DevExpress.XtraBars.Bar()
+            {
                 BarName = "StatusBar",
                 Manager = BarManager,
                 DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom,
