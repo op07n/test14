@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp3.0</TargetFrameworks>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>O:\Développements\OopWinformsDesigner\ITLightON.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>

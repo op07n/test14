@@ -6,11 +6,11 @@
     <Product>Out-Of-Process Translation</Product>
     <Description>All translations resources files to be used i the Winforms Designer application.</Description>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>O:\Développements\OopWinformsDesigner\ITLightON.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\..\OopWinformsDesigner\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\ITLightON.snk" Link="ITLightON.snk" />
+    <None Include="..\..\..\OopWinformsDesigner\ITLightON.snk" Link="ITLightON.snk" />
   </ItemGroup>
 
   <ItemGroup>

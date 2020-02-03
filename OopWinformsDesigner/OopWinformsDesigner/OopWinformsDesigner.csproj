@@ -6,9 +6,9 @@
     <UseWindowsForms>true</UseWindowsForms>
     <Company>ITLightON</Company>
     <Description>Windows forms Designer Out Of Process (running as a blender, out of Microsoft Visual Studio).</Description>
-    <ApplicationIcon>O:\Développements\OopWinformsDesigner\OopWinformsDesigner\Assets\Designer.ico</ApplicationIcon>
+    <ApplicationIcon>..\..\OopWinformsDesigner\Assets\Designer.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>O:\Développements\OopWinformsDesigner\ITLightON.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
