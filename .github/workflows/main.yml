@@ -1,0 +1,31 @@
+  
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+        
+      - name: Setup NuGet.exe
+        uses: nuget/setup-nuget@v1
+        with:
+          nuget-version: latest
+     
+
+      - name: Nuget Restore ATM Simulator
+        run: nuget restore "$Env:GITHUB_WORKSPACE\OopWinformsDesigner\OopWinformsDesigner.sln"
+        
+
+      - name: Build
+        run: |
+           cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
+           .\MSBuild.exe "$Env:GITHUB_WORKSPACE\OopWinformsDesigner\OopWinformsDesigner.sln" -p:TargetFramework=net472
+           
+      - uses: actions/upload-artifact@v1
+        with:
+          name: artifact
+          path: ./OopWinformsDesigner/bin/Debug
