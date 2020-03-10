@@ -1,3 +1,5 @@
+Duplicate from  https://github.com/jeromep01/OopWinformsDesigner
+
 # OopWinformsDesigner
 Windows Forms designer using components inherited from DevExpress 19.2.5. The development does not include any Designer from their assemblies, so all the code is intended to be used in code, not in the designer.
 
