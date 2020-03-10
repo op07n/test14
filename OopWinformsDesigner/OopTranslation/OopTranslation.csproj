@@ -5,13 +5,9 @@
     <Company>ITLightON</Company>
     <Product>Out-Of-Process Translation</Product>
     <Description>All translations resources files to be used i the Winforms Designer application.</Description>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\..\OopWinformsDesigner\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\..\OopWinformsDesigner\ITLightON.snk" Link="ITLightON.snk" />
-  </ItemGroup>
+
 
   <ItemGroup>
     <Compile Update="Ribbon.Designer.cs">
