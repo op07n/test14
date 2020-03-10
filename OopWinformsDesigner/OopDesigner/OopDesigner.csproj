@@ -2,13 +2,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp3.0</TargetFrameworks>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\ITLightON.snk" Link="ITLightON.snk" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Unity.Container" Version="5.11.5" />
