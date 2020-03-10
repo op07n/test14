@@ -7,8 +7,6 @@
     <Company>ITLightON</Company>
     <Description>Windows forms Designer Out Of Process (running as a blender, out of Microsoft Visual Studio).</Description>
     <ApplicationIcon>..\..\OopWinformsDesigner\Assets\Designer.ico</ApplicationIcon>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -167,8 +165,6 @@
     </EmbeddedResource>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\..\ITLightON.snk" Link="ITLightON.snk" />
-  </ItemGroup>
+
 
 </Project>
